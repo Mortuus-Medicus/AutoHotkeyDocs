@@ -580,7 +580,7 @@ WinSetTransColor("EEAA99", MyGui)</pre>
 <p><em>CurrentBar</em> and <em>NewBar</em> are a <a href="Menu.htm">MenuBar object</a> created by <a href="Menu.htm#Call">MenuBar()</a>. For example:</p>
 <pre>FileMenu := Menu()
 FileMenu.Add("&amp;Open`tCtrl+O", (*) =&gt; FileSelect())  <em>; See remarks below about Ctrl+O.</em>
-FileMenu.Add("E&amp;xit", (*) =&gt; ExitApp())
+FileMenu.Add("&amp;Exit", (*) =&gt; ExitApp())
 HelpMenu := Menu()
 HelpMenu.Add("&amp;About", (*) =&gt; MsgBox("Not implemented"))
 Menus := MenuBar()
@@ -836,7 +836,7 @@ FileMenu.Add("&amp;Open", MenuFileOpen)
 FileMenu.Add("&amp;Save", MenuFileSave)
 FileMenu.Add("Save &amp;As", MenuFileSaveAs)
 FileMenu.Add() <em>; Separator line.</em>
-FileMenu.Add("E&amp;xit", MenuFileExit)
+FileMenu.Add("&amp;Exit", MenuFileExit)
 HelpMenu := Menu()
 HelpMenu.Add("&amp;About", MenuHelpAbout)
 
